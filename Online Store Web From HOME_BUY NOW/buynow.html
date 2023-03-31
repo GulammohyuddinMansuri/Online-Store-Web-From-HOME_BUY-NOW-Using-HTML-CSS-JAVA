@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mid.css">
+    <script src="js/mid.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>MY CART</h2>
+    <form name="receipt" method="Post" onsubmit="return checkForm();" action="">
+        <label for="name">Name *</label>
+        <input id="name" placeholder="Name" class="textInput" type="text" name="name"><br />
+
+        <label for="phone">Phone *</label>
+        <input id="phone" placeholder="123-123-1234" class="textInput" type="phone" name="phone"><br />
+
+        <label for="email">Email</label>
+        <input id="email" placeholder="test@test.com" class="textInput" type="email" name="email"><br />
+
+        <label for="postcode">Post Code</label>
+        <input id="postcode" placeholder="X9X 9X9" class="textInput" type="postcode" name="postcode"><br />
+
+        <label for="address">Address</label>
+        <input id="address" placeholder="Address" class="textInput" type="address" name="address"><br />
+
+        <label for="city">City</label>
+        <input id="city" placeholder="City" class="textInput" type="city" name="city"><br />
+
+        <label for="">Province</label>
+        <select name="province" id="province" class="textInput">
+            <option value="">----- Select -----</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Alberta">Alberta</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Nova Skotia">Nova Skotia</option>
+            <option value="Quebec">Quebec</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Yukon">Yukon</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="Manitoba">Manitoba</option>
+        </select>
+
+        <label for="mug">Mug ($8.50 each)</label>
+        <input id="mug" placeholder="quantity" class="textInput" type="Mug" name="mug"><br />
+        <label for="bracelet">Bracelet ($41.99 each)</label>
+        <input id="bracelet" placeholder="quantity" class="textInput" type="Bracelet" name="bracelet"><br />
+        <label for="plate">Plate ($17.50 each)</label>
+        <input id="plate" placeholder="quantity" class="textInput" type="Plate" name="plate"><br />
+
+        <br /><br />
+
+        <input type="submit" value="Submit" class="btn">
+        <p id="errors"></p>
+
+    </form>
+
+    <div class="formData">
+        <h2 class="sr">Store Receipt</h2>
+        <p id="formResult">
+        </p>
+    </div>
+
+</body>
+
+</html>
